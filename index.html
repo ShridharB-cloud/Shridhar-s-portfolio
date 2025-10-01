@@ -3,36 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shridhar B | Portfolio</title>
+  <title>Shridhar B Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Shridhar B</h1>
-    <p>AI & ML Enthusiast | Final Year Student</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <canvas id="hero-bg"></canvas>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Shridhar B" class="profile-pic">
+      <div class="fade-text">
+        <h1>Hello, I'm Shridhar B</h1>
+        <p>AI & ML Enthusiast | Final Year Student</p>
+      </div>
+    </div>
+    <div class="scroll-indicator">&#x25BC;</div>
   </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Passionate about Artificial Intelligence and Machine Learning...</p>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-bar">
+      <p>Python</p>
+      <div class="bar"><span data-width="90%"></span></div>
+    </div>
+    <div class="skill-bar">
+      <p>C++</p>
+      <div class="bar"><span data-width="80%"></span></div>
+    </div>
+    <div class="skill-bar">
+      <p>Machine Learning</p>
+      <div class="bar"><span data-width="85%"></span></div>
+    </div>
+    <div class="skill-bar">
+      <p>Data Analysis</p>
+      <div class="bar"><span data-width="80%"></span></div>
+    </div>
   </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>C++</li>
-      <li>Machine Learning</li>
-      <li>Data Science</li>
-    </ul>
-  </section>
-  <section id="projects">
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <p>Project cards will go here...</p>
+    <div class="project-cards">
+      <div class="card">
+        <h3>AI Vulnerability Scanner</h3>
+        <p>Detects common website security flaws using AI.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Modern portfolio website with animations and dark theme.</p>
+      </div>
+    </div>
   </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: shridharb998090@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shridharb998090">Profile</a></p>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <h2 class="resume-title">Resume</h2>
+    <a href="Shridhar_Resume.pdf" target="_blank" class="resume-btn">Download My Resume</a>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Connect with Me</h2>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/shridhar-bhovi-92b0152a2/" target="_blank">LinkedIn</a>
+      <a href="mailto:shridharb9980904843@gmail.com">Email</a>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
